@@ -1,0 +1,52 @@
+nav {
+	height: 50px;
+	color: #fff;
+	position: fixed;
+	width: 100% !important;
+	padding: 0 1em 60px;
+	z-index: 10;
+	transition: all 0.5s ease;
+	
+	&.bg-on {
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	a {
+		color: #fff;
+	}
+
+	.brand {
+		position: absolute;
+		font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+
+		a {
+			font-size: 2em;
+
+			sup {
+				font-size: 0.5em;
+				margin-left: 6px;
+				top: -12px;
+			}
+		}
+	}
+
+	ul.menu {
+		list-style: none;
+		padding: 0;
+		position: absolute;
+		right: 15px;
+
+		li {
+			display: inline-block;
+			margin: 0 12px;
+
+			a.access {
+				font-size: 0.8em;
+				border: 1px solid #fff;
+				padding: 7px 14px;
+				border-radius: 7px;
+				opacity: 0.5;
+			}
+		}
+	}
+}

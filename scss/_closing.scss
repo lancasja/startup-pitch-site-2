@@ -1,0 +1,151 @@
+#closing {
+	background: url(../img/endcap.jpg) no-repeat center top;
+	background-size: cover;
+
+	.section-copy {
+		top: 180px;
+		right: 100px;
+		text-align: right;
+		color: #fff;
+
+		@media screen and (max-width: 540px) {
+			top: 90px;
+			right: 0;
+			width: 60%;
+
+			.tag {
+				background: rgba(0, 0, 0, 0.5);
+				padding-right: 15px;
+			}
+		}
+
+		h3 {
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-style: italic;
+			font-weight: normal;
+		}
+
+		p {
+			font-size: 1.75em;
+		}
+
+		.learn-more {
+			color: #fff;		
+			margin-top: 275px;
+			width: 55%;
+			float: right;
+			text-align: center;
+
+			@media screen and (max-width: 540px) {
+				margin-top: 220px;
+				font-size: 0.8em;
+				padding-right: 15px;
+				width: 140%;
+			}
+
+			p {
+				// text-align: left;
+			}
+
+			.btn {
+				display: inline-block;
+				background: #38bc31;
+				color: #fff;
+				padding: 9px 16px;
+				border-radius: 7px;
+				margin-top: 10px;
+				// margin-right: 114px;
+				font-size: 1.25em;
+				text-align: center;
+
+				@media screen and (max-width: 540px) {
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+
+	.signup-modal {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		z-index: 999;
+		background: rgba(0, 0, 0, 0.7);
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 0.5s ease;
+
+		&.show {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.modal-content {
+			width: 98%;
+			max-width: 500px;
+			margin: 17% auto 0 auto;
+			background: rgba(255, 255, 255, 0.9);
+			border-radius: 7px;
+			position: relative;
+			padding-bottom: 20px;
+
+			h2 {
+				font-size: 1.25em;
+				margin: 0 0 20px 0;
+				text-align: center;
+				background: rgba(0, 0, 0, 0.8);
+				padding: 7px 0;
+				color: #fff;
+				z-index: 1;
+			}
+
+			.close {
+				position: absolute;
+				right: 0;
+				top: 7px;
+				font-size: 1.25em;
+				padding: 0 12px;
+				cursor: pointer;
+				z-index: 2;
+				color: rgba(255, 255, 255, 0.6);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

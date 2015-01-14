@@ -1,0 +1,522 @@
+/* line 1, ../scss/_base.scss */
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+/* line 5, ../scss/_base.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 12, ../scss/_base.scss */
+body {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 18px; }
+
+/* line 17, ../scss/_base.scss */
+a, a:hover {
+  text-decoration: none; }
+
+/* line 1, ../scss/_common.scss */
+section {
+  position: relative;
+  height: calc(100% - 80px);
+  border-bottom: 2px solid #555;
+  overflow: hidden; }
+  /* line 7, ../scss/_common.scss */
+  section .section-copy {
+    position: absolute; }
+    /* line 10, ../scss/_common.scss */
+    section .section-copy h3 {
+      font-size: 2em; }
+    /* line 14, ../scss/_common.scss */
+    section .section-copy h3, section .section-copy p {
+      margin: 0; }
+
+/* line 1, ../scss/_nav.scss */
+nav {
+  height: 50px;
+  color: #fff;
+  position: fixed;
+  width: 100% !important;
+  padding: 0 1em 60px;
+  z-index: 10;
+  transition: all 0.5s ease; }
+  /* line 10, ../scss/_nav.scss */
+  nav.bg-on {
+    background: rgba(0, 0, 0, 0.5); }
+  /* line 14, ../scss/_nav.scss */
+  nav a, nav a:hover {
+    color: #fff; }
+  /* line 18, ../scss/_nav.scss */
+  nav .brand {
+    position: absolute;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; }
+    /* line 22, ../scss/_nav.scss */
+    nav .brand a {
+      font-size: 2em; }
+      /* line 25, ../scss/_nav.scss */
+      nav .brand a sup {
+        font-size: 0.5em;
+        margin-left: 6px;
+        top: -12px; }
+  /* line 33, ../scss/_nav.scss */
+  nav ul.menu {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    right: 15px; }
+    /* line 39, ../scss/_nav.scss */
+    nav ul.menu li {
+      display: inline-block;
+      margin: 0 12px; }
+      /* line 43, ../scss/_nav.scss */
+      nav ul.menu li a.access {
+        font-size: 0.8em;
+        border: 1px solid #fff;
+        padding: 7px 14px;
+        border-radius: 7px;
+        opacity: 0.5; }
+
+/* line 1, ../scss/_top.scss */
+#top {
+  background: url(../img/opener.jpg) no-repeat center center;
+  background-size: cover; }
+  /* line 5, ../scss/_top.scss */
+  #top .section-copy {
+    top: 180px;
+    right: 100px;
+    text-align: right;
+    color: #fff; }
+    @media screen and (max-width: 540px) {
+      /* line 5, ../scss/_top.scss */
+      #top .section-copy {
+        text-align: center;
+        right: 20px; } }
+    /* line 16, ../scss/_top.scss */
+    #top .section-copy h3 {
+      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+      font-weight: normal;
+      font-style: italic;
+      font-size: 3em; }
+    /* line 23, ../scss/_top.scss */
+    #top .section-copy p {
+      font-size: 2em; }
+
+/* line 1, ../scss/_secondary.scss */
+#secondary {
+  background: url(../img/intro.jpg) no-repeat bottom center;
+  background-size: cover; }
+  @media screen and (max-width: 548px) {
+    /* line 1, ../scss/_secondary.scss */
+    #secondary {
+      background-position: 30% 0%; } }
+  /* line 9, ../scss/_secondary.scss */
+  #secondary .section-copy {
+    top: 0px;
+    right: 100px;
+    text-align: right;
+    color: #fff;
+    display: none; }
+    @media screen and (max-width: 540px) {
+      /* line 9, ../scss/_secondary.scss */
+      #secondary .section-copy {
+        right: 20px;
+        font-size: 0.7em; } }
+    /* line 21, ../scss/_secondary.scss */
+    #secondary .section-copy p {
+      margin: 1.5em 0;
+      font-size: 2em;
+      text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2); }
+      @media screen and (max-width: 540px) {
+        /* line 21, ../scss/_secondary.scss */
+        #secondary .section-copy p {
+          background: rgba(0, 0, 0, 0.5);
+          padding: 8px 16px 8px 0; } }
+
+/* line 1, ../scss/_fancyIcons.scss */
+#fancyIcons {
+  height: auto; }
+  /* line 4, ../scss/_fancyIcons.scss */
+  #fancyIcons div[class*="col-"] {
+    height: 280px;
+    background: #bca569;
+    border-right: 1px solid #000; }
+    @media screen and (max-width: 768px) {
+      /* line 4, ../scss/_fancyIcons.scss */
+      #fancyIcons div[class*="col-"] {
+        height: 180px; } }
+    /* line 13, ../scss/_fancyIcons.scss */
+    #fancyIcons div[class*="col-"]:last-child {
+      border-right: none; }
+    @media screen and (max-width: 768px) {
+      /* line 4, ../scss/_fancyIcons.scss */
+      #fancyIcons div[class*="col-"] {
+        border-right: none;
+        border-bottom: 1px solid #000; } }
+
+/* line 1, ../scss/_learnMore.scss */
+#learnMore {
+  background: url(../img/aivvyDJ.jpg) no-repeat center bottom;
+  background-size: cover; }
+  /* line 5, ../scss/_learnMore.scss */
+  #learnMore .section-copy {
+    right: 100px;
+    top: 100px;
+    color: #fff; }
+    @media screen and (max-width: 540px) {
+      /* line 5, ../scss/_learnMore.scss */
+      #learnMore .section-copy {
+        right: 20px; } }
+    /* line 14, ../scss/_learnMore.scss */
+    #learnMore .section-copy h3 {
+      font-size: 2em;
+      font-weight: normal;
+      text-align: right; }
+      @media screen and (max-width: 540px) {
+        /* line 14, ../scss/_learnMore.scss */
+        #learnMore .section-copy h3 {
+          width: 55%;
+          font-size: 1.5em;
+          float: right; } }
+
+/* line 1, ../scss/_locations.scss */
+#locations {
+  height: auto; }
+  /* line 4, ../scss/_locations.scss */
+  #locations div[class*="col-"] {
+    height: 400px; }
+    /* line 7, ../scss/_locations.scss */
+    #locations div[class*="col-"]:nth-child(1) {
+      background: url(../img/SFBayArea.jpg) no-repeat center center;
+      background-size: cover; }
+      @media screen and (max-width: 540px) {
+        /* line 7, ../scss/_locations.scss */
+        #locations div[class*="col-"]:nth-child(1) {
+          background-position: 70%; } }
+    /* line 16, ../scss/_locations.scss */
+    #locations div[class*="col-"]:nth-child(2) {
+      background: url(../img/Shenzhen.jpg) no-repeat center center;
+      background-size: cover; }
+  /* line 22, ../scss/_locations.scss */
+  #locations .location-copy {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    left: 0; }
+    /* line 30, ../scss/_locations.scss */
+    #locations .location-copy h3 {
+      color: #fff;
+      width: 55%;
+      font-size: 1.5em;
+      position: absolute;
+      bottom: 80px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 9px 1em; }
+      @media screen and (max-width: 540px) {
+        /* line 30, ../scss/_locations.scss */
+        #locations .location-copy h3 {
+          width: 100%;
+          font-size: 1.25em; } }
+
+/* line 1, ../scss/_footer.scss */
+footer {
+  background: #000;
+  color: #fff;
+  height: 80px;
+  padding: 15px 15px 0;
+  font-size: 0.7em; }
+
+/* line 1, ../scss/_hoveranim.scss */
+.grid {
+  overflow: hidden;
+  list-style: none;
+  text-align: center; }
+
+/* Common style */
+/* line 8, ../scss/_hoveranim.scss */
+.grid figure {
+  font-family: sans-serif;
+  display: inline-block;
+  height: 100%;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+  margin-left: -15px;
+  overflow: hidden; }
+
+/* line 19, ../scss/_hoveranim.scss */
+.grid figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  opacity: 0.8; }
+
+/* line 26, ../scss/_hoveranim.scss */
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* line 35, ../scss/_hoveranim.scss */
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none; }
+
+/* line 40, ../scss/_hoveranim.scss */
+.grid figure figcaption,
+.grid figure a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+/* line 51, ../scss/_hoveranim.scss */
+.grid figure a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0; }
+
+/* line 59, ../scss/_hoveranim.scss */
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300; }
+
+/* line 64, ../scss/_hoveranim.scss */
+.grid figure h2 span {
+  font-weight: 800; }
+
+/* line 68, ../scss/_hoveranim.scss */
+.grid figure h2,
+.grid figure p {
+  margin: -10px 0 0 0; }
+
+/* line 73, ../scss/_hoveranim.scss */
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 80%; }
+
+/* Individual effects */
+/*---------------*/
+/***** Sarah *****/
+/*---------------*/
+/* line 84, ../scss/_hoveranim.scss */
+figure.effect-sarah img {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-20px, 0, 0);
+  transform: translate3d(-20px, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+/* line 93, ../scss/_hoveranim.scss */
+figure.effect-sarah:hover img {
+  opacity: 0.4;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 99, ../scss/_hoveranim.scss */
+figure.effect-sarah figcaption {
+  text-align: left; }
+
+/* line 103, ../scss/_hoveranim.scss */
+figure.effect-sarah h2 {
+  position: relative;
+  overflow: hidden;
+  padding: 0.5em 0; }
+
+/* line 109, ../scss/_hoveranim.scss */
+figure.effect-sarah h2::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0); }
+  @media screen and (max-width: 640px) {
+    /* line 109, ../scss/_hoveranim.scss */
+    figure.effect-sarah h2::after {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); } }
+
+/* line 128, ../scss/_hoveranim.scss */
+figure.effect-sarah:hover h2::after {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+/* line 133, ../scss/_hoveranim.scss */
+figure.effect-sarah p {
+  padding: 1em 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0); }
+  @media screen and (max-width: 640px) {
+    /* line 133, ../scss/_hoveranim.scss */
+    figure.effect-sarah p {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0); } }
+
+/* line 148, ../scss/_hoveranim.scss */
+figure.effect-sarah:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+@media screen and (max-width: 69.5em) {
+  /* line 155, ../scss/_hoveranim.scss */
+  .grid figure figcaption {
+    font-size: 90%; } }
+/* line 1, ../scss/_signup-form.scss */
+#mc_embed_signup {
+  clear: left;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; }
+  /* line 5, ../scss/_signup-form.scss */
+  #mc_embed_signup form {
+    text-align: center; }
+    /* line 8, ../scss/_signup-form.scss */
+    #mc_embed_signup form input {
+      margin-bottom: 12px;
+      padding: 7px 0 7px 7px; }
+      /* line 12, ../scss/_signup-form.scss */
+      #mc_embed_signup form input[type="submit"] {
+        background: #38bc31;
+        border: none;
+        color: #fff;
+        padding: 7px 14px;
+        border-radius: 7px; }
+  /* line 22, ../scss/_signup-form.scss */
+  #mc_embed_signup ::-webkit-input-placeholder {
+    font-size: 0.8em;
+    line-height: 2em; }
+  /* line 27, ../scss/_signup-form.scss */
+  #mc_embed_signup :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 0.8em;
+    line-height: 2em; }
+  /* line 32, ../scss/_signup-form.scss */
+  #mc_embed_signup ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 0.8em;
+    line-height: 2em; }
+  /* line 37, ../scss/_signup-form.scss */
+  #mc_embed_signup :-ms-input-placeholder {
+    font-size: 0.8em;
+    line-height: 2em; }
+
+/* line 1, ../scss/_closing.scss */
+#closing {
+  background: url(../img/endcap.jpg) no-repeat center top;
+  background-size: cover; }
+  /* line 5, ../scss/_closing.scss */
+  #closing .section-copy {
+    top: 180px;
+    right: 100px;
+    text-align: right;
+    color: #fff; }
+    @media screen and (max-width: 540px) {
+      /* line 5, ../scss/_closing.scss */
+      #closing .section-copy {
+        top: 90px;
+        right: 0;
+        width: 60%; }
+        /* line 16, ../scss/_closing.scss */
+        #closing .section-copy .tag {
+          background: rgba(0, 0, 0, 0.5);
+          padding-right: 15px; } }
+    /* line 22, ../scss/_closing.scss */
+    #closing .section-copy h3 {
+      font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+      font-style: italic;
+      font-weight: normal; }
+    /* line 28, ../scss/_closing.scss */
+    #closing .section-copy p {
+      font-size: 1.75em; }
+    /* line 32, ../scss/_closing.scss */
+    #closing .section-copy .learn-more {
+      color: #fff;
+      margin-top: 275px;
+      width: 55%;
+      float: right;
+      text-align: center; }
+      @media screen and (max-width: 540px) {
+        /* line 32, ../scss/_closing.scss */
+        #closing .section-copy .learn-more {
+          margin-top: 220px;
+          font-size: 0.8em;
+          padding-right: 15px;
+          width: 140%; } }
+      /* line 50, ../scss/_closing.scss */
+      #closing .section-copy .learn-more .btn {
+        display: inline-block;
+        background: #38bc31;
+        color: #fff;
+        padding: 9px 16px;
+        border-radius: 7px;
+        margin-top: 10px;
+        font-size: 1.25em;
+        text-align: center; }
+        @media screen and (max-width: 540px) {
+          /* line 50, ../scss/_closing.scss */
+          #closing .section-copy .learn-more .btn {
+            margin-right: 15px; } }
+  /* line 68, ../scss/_closing.scss */
+  #closing .signup-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease; }
+    /* line 79, ../scss/_closing.scss */
+    #closing .signup-modal.show {
+      opacity: 1;
+      pointer-events: auto; }
+    /* line 84, ../scss/_closing.scss */
+    #closing .signup-modal .modal-content {
+      width: 98%;
+      max-width: 500px;
+      margin: 17% auto 0 auto;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 7px;
+      position: relative;
+      padding-bottom: 20px; }
+      /* line 93, ../scss/_closing.scss */
+      #closing .signup-modal .modal-content h2 {
+        font-size: 1.25em;
+        margin: 0 0 20px 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 7px 0;
+        color: #fff;
+        z-index: 1; }
+      /* line 103, ../scss/_closing.scss */
+      #closing .signup-modal .modal-content .close {
+        position: absolute;
+        right: 0;
+        top: 7px;
+        font-size: 1.25em;
+        padding: 0 12px;
+        cursor: pointer;
+        z-index: 2;
+        color: rgba(255, 255, 255, 0.6); }

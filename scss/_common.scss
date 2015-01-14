@@ -1,0 +1,18 @@
+section {
+	position: relative;
+	height: calc(100% - 80px);
+	border-bottom: 2px solid #555;
+	overflow: hidden;
+	
+	.section-copy {
+		position: absolute;
+		
+		h3 {
+			font-size: 2em;
+		}
+
+		h3, p {
+			margin: 0;
+		}
+	}
+}

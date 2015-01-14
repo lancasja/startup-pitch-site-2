@@ -1,0 +1,26 @@
+#learnMore {
+	background: url(../img/aivvyDJ.jpg) no-repeat center bottom;
+	background-size: cover;
+
+	.section-copy {
+		right: 100px;
+		top: 100px;
+		color: #fff;
+
+		@media screen and (max-width: 540px) {
+			right: 20px;
+		}
+
+		h3 {
+			font-size: 2em;
+			font-weight: normal;
+			text-align: right;
+
+			@media screen and (max-width: 540px) {
+				width: 55%;
+				font-size: 1.5em;
+				float: right;
+			}
+		}
+	}
+}

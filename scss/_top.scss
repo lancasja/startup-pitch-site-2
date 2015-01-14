@@ -1,0 +1,27 @@
+#top {
+	background: url(../img/opener.jpg) no-repeat center center;
+	background-size: cover;
+
+	.section-copy {
+		top: 180px;
+		right: 100px;
+		text-align: right;
+		color: #fff;
+
+		@media screen and (max-width: 540px) {
+			text-align: center;
+			right: 20px;
+		}
+
+		h3 {
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+			font-weight: normal;
+			font-style: italic;
+			font-size: 3em;
+		}
+
+		p {
+			font-size: 2em;
+		}
+	}
+}

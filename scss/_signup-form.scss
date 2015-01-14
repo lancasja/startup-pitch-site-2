@@ -1,0 +1,41 @@
+#mc_embed_signup {
+	clear: left;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+	form {
+		text-align: center;
+
+		input {
+			margin-bottom: 12px;
+			padding: 7px 0 7px 7px;
+
+			&[type="submit"] {
+				background: #38bc31;
+				border: none;
+				color: #fff;
+				padding: 7px 14px;
+				border-radius: 7px;
+			}
+		}
+	}
+
+	::-webkit-input-placeholder {
+		font-size: 0.8em;
+		line-height: 2em;
+	}
+
+	:-moz-placeholder { /* Firefox 18- */
+		font-size: 0.8em;
+		line-height: 2em;
+	}
+
+	::-moz-placeholder {  /* Firefox 19+ */
+		font-size: 0.8em;
+		line-height: 2em;
+	}
+
+	:-ms-input-placeholder {  
+		font-size: 0.8em;
+		line-height: 2em;
+	}
+}

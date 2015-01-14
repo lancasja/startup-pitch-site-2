@@ -1,0 +1,32 @@
+#secondary {
+	background: url(../img/intro.jpg) no-repeat bottom center;
+	background-size: cover;
+
+	@media screen and (max-width: 548px) {
+		background-position: 30% 0%;
+	}
+
+	.section-copy {
+		top: 0px;
+		right: 100px;
+		text-align: right;
+		color: #fff;
+		display: none;
+
+		@media screen and (max-width: 540px) {
+			right: 20px;
+			font-size: 0.7em;
+		}
+
+		p {
+			margin: 1.5em 0;
+			font-size: 2em;
+			text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+
+			@media screen and (max-width: 540px) {
+				background: rgba(0, 0, 0, 0.5);	
+				padding: 8px 16px 8px 0;
+			}
+		}
+	}
+}
